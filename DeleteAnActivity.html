@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+
+<style>
+  .center {
+    text-align: center;
+    width: 200px;
+    height: 70px;
+  }</style>
+
+<style>
+  .noButton{
+    text-align: center;
+    width: 100px;
+  }
+</style>
+
+<style>
+  .yesButton {
+    text-align: center;
+    width: 200px;
+    letter-spacing: 30px;
+  }
+</style>
+
+<style>
+  .cancel{
+    text-align: right;
+    width: 200px;
+    height: 30px;
+
+  }
+</style>
+
+<style>
+  .window{
+    height: 150px;
+    width: 200px;
+    border: black;
+    background: aliceblue;
+  }
+</style>
+
+<div class="window">
+  <body>
+  <div class="cancel">
+
+    <button onclick="window.open('http://www.google.com');">
+      <div class="cancelBtn">
+        X
+      </div>
+    </button>
+
+  </div>
+
+  <div class="center">
+    <label>Do You really want to delete activity "Walking (slow)" from today's activities' list?
+    </label>
+  </div>
+
+  <div class="yesButton">
+    <input class="btn btn-primary" type="reset" value="No">
+    <input class="btn btn-primary" type="reset" value="Yes">
+
+  </div>
+
+  </body>
+</div>
+
+</html>
