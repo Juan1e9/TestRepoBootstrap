@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html style="--bs-light: #f8f9fa;--bs-light-rgb: 248,249,250;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Profile - Brand</title>
+    <title>Dashboard - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
@@ -14,270 +14,275 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background: var(--bs-white);">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
-                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
-                </a>
-                <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
-                </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
-            </div>
-        </nav>
-        <div class="d-flex flex-column" id="content-wrapper">
+        <div class="d-flex flex-column" id="content-wrapper" style="color: var(--bs-gray-900);background: var(--bs-white);">
             <div id="content">
-                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                        </form>
-                        <ul class="navbar-nav flex-nowrap ms-auto">
-                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
-                                <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
-                                    <form class="me-auto navbar-search w-100">
-                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
-                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 12, 2019</span>
-                                                <p>A new monthly report is ready to download!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 7, 2019</span>
-                                                <p>$290.29 has been deposited into your account!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 2, 2019</span>
-                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
-                                                <div class="status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
-                                                <div class="bg-warning status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
-                            </li>
-                            <div class="d-none d-sm-block topbar-divider"></div>
-                            <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar1.jpeg"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                <nav class="navbar navbar-light navbar-expand-md sticky-top" id="mainNav" style="color: var(--bs-gray-900);">
+                    <div class="container"><a class="navbar-brand" href="#" style="color: var(--bs-gray-900);">Sports</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--bs-gray-900);">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item nav-link"><a class="nav-link" href="main.html" data-bs-target="#" style="color: var(--bs-gray-900);">Main</a></li>
+                                <li class="nav-item nav-link"><a class="nav-link" href="index.html" data-bs-target="#" style="color: var(--bs-gray-900);">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h3 class="text-dark mb-4">Profile</h3>
-                    <div class="row mb-3">
-                        <div class="col-lg-4">
-                            <div class="card mb-3">
-                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image2.jpeg" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Change Photo</button></div>
+                    <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-body" style="height: 300px;">
+                                    <div class="text-center">
+                                        <img class="rounded-circle mb-3 mt-4" src="assets/img/avatars/avatar6.png" width="160" height="160">
+                                        <div class="mb-3"><button class="btn btn-primary" type="button" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Change Photo</button></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="text-primary fw-bold m-0">Projects</h6>
+                                <div class="card-header d-flex align-items-center">
+                                    <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">User info</h6>
                                 </div>
-                                <div class="card-body">
-                                    <h4 class="small fw-bold">Server migration<span class="float-end">20%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
+                                <div class="card-body" style="height: 300px;">
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Username:</strong></label>
+                                        </div>
+                                        <div class="col-md-8">XxSuperSportsmanxX</div>
                                     </div>
-                                    <h4 class="small fw-bold">Sales tracking<span class="float-end">40%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Country:</strong></label>
+                                        </div>
+                                        <div class="col-md-8">Latvia</div>
                                     </div>
-                                    <h4 class="small fw-bold">Customer Database<span class="float-end">60%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Birth date:</strong></label>
+                                        </div>
+                                        <div class="col-md-8"> 05/03/1992 </div>
                                     </div>
-                                    <h4 class="small fw-bold">Payout Details<span class="float-end">80%</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Email:</strong></label>
+                                        </div>
+                                        <div class="col-md-8">janisberzins@gmail.com</div>
                                     </div>
-                                    <h4 class="small fw-bold">Account setup<span class="float-end">Complete!</span></h4>
-                                    <div class="progress progress-sm mb-3">
-                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+
+                                    <div class="d-flex justify-content-between align-items-center m-4">
+                                        <div>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" style="background: var(--bs-white);border-color: var(--bs-gray-900);">
+                                                Change user info
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">User info change</h5>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="username"><strong>Username:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" type="text" id="username" name="username">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="country"><strong>Country:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-select " aria-label="Default select example" id="country">
+                                                                        <option value="1">Latvia</option>
+                                                                        <option value="2">Estonia</option>
+                                                                        <option value="3">Lithuania</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="date"><strong>Birth date:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" type="date" id="date">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="email"><strong>Email:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" type="text" id="email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Modal -->
+                                        </div>
+                                        <div>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1" style="background: var(--bs-white);border-color: var(--bs-gray-900);">
+                                                Change password
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Password change</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row d-flex align-items-center m-2">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label" for="oldPass"><strong>Old password:</strong></label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" type="password" id="oldPass" name="oldPass">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row d-flex align-items-center m-2">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label" for="newPass1"><strong>New password:</strong></label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" type="password" id="newPass1" name="newPass1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row d-flex align-items-center m-2">
+                                                            <div class="col-md-4">
+                                                                <label class="form-label" for="newPass2"><strong>Repeat new password:</strong></label>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" type="password" id="newPass2" name="newPass2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <!-- Modal -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8">
-                            <div class="row mb-3 d-none">
-                                <div class="col">
-                                    <div class="card textwhite bg-primary text-white shadow">
-                                        <div class="card-body">
-                                            <div class="row mb-2">
-                                                <div class="col">
-                                                    <p class="m-0">Peformance</p>
-                                                    <p class="m-0"><strong>65.2%</strong></p>
-                                                </div>
-                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
-                                            </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
-                                        </div>
-                                    </div>
+                        <div class="col-lg-8 col-xl-8">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex align-items-center">
+                                    <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">My profile</h6>
                                 </div>
-                                <div class="col">
-                                    <div class="card textwhite bg-success text-white shadow">
-                                        <div class="card-body">
-                                            <div class="row mb-2">
-                                                <div class="col">
-                                                    <p class="m-0">Peformance</p>
-                                                    <p class="m-0"><strong>65.2%</strong></p>
-                                                </div>
-                                                <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
-                                            </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                <div class="card-body" style="height: 380px;">
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Name:</strong></label>
                                         </div>
+                                        <div class="col-md-4"><span class="hover-overlay ripple" id="spanName">Jānis</span></div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getName()" width="20" height="20"></a></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="card shadow mb-3">
-                                        <div class="card-header py-3">
-                                            <p class="text-primary m-0 fw-bold">User Settings</p>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Surname:</strong></label>
                                         </div>
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Username</strong></label><input class="form-control" type="text" id="username" placeholder="user.name" name="username"></div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Email Address</strong></label><input class="form-control" type="email" id="email" placeholder="user@example.com" name="email"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" id="first_name" placeholder="John" name="first_name"></div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" id="last_name" placeholder="Doe" name="last_name"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
-                                            </form>
-                                        </div>
+                                        <div class="col-md-4"><span id="spanSurname">Bērziņš</span></div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getSurname()" width="20" height="20"></a></div>
                                     </div>
-                                    <div class="card shadow">
-                                        <div class="card-header py-3">
-                                            <p class="text-primary m-0 fw-bold">Contact Settings</p>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Height:</strong></label>
                                         </div>
-                                        <div class="card-body">
-                                            <form>
-                                                <div class="mb-3"><label class="form-label" for="address"><strong>Address</strong></label><input class="form-control" type="text" id="address" placeholder="Sunset Blvd, 38" name="address"></div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="city"><strong>City</strong></label><input class="form-control" type="text" id="city" placeholder="Los Angeles" name="city"></div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="country"><strong>Country</strong></label><input class="form-control" type="text" id="country" placeholder="USA" name="country"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Save&nbsp;Settings</button></div>
-                                            </form>
+                                        <div class="col-md-4"><span id="spanHeight">189</span> cm</div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getHeight()" width="20" height="20"></a></div>
+                                    </div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Weight:</strong></label>
+                                        </div>
+                                        <div class="col-md-4"><span id="spanWeight">70</span> Kg</div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getWeight()" width="20" height="20"></a></div>
+                                    </div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Age:</strong></label>
+                                        </div>
+                                        <div class="col-md-4"><span id="1">24</span></div>
+                                    </div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Recomended calorie consumption:</strong></label>
+                                        </div>
+                                        <div class="col-md-4"><span id="spanIn">2000</span> Kcal</div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getIn()" width="20" height="20"></a></div>
+                                    </div>
+                                    <div class="row d-flex align-items-center m-2">
+                                        <div class="col-md-4">
+                                            <label class="form-label"><strong>Recomended calorie output:</strong></label>
+                                        </div>
+                                        <div class="col-md-4"><span id="spanOut">2000</span> Kcal</div>
+                                        <div class="col-md-4"><a href="#!"><img src="assets/img/edit.png" onclick="getOut()" width="20" height="20"></a></div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-4">
+                                            <a class="nav-link" href="main.html">
+                                                <button class="btn btn-primary" type="button" style="background: var(--bs-white);border-color: var(--bs-gray-900);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card shadow mb-5">
-                        <div class="card-header py-3">
-                            <p class="text-primary m-0 fw-bold">Forum Settings</p>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <form>
-                                        <div class="mb-3"><label class="form-label" for="signature"><strong>Signature</strong><br></label><textarea class="form-control" id="signature" rows="4" name="signature"></textarea></div>
-                                        <div class="mb-3">
-                                            <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1"><strong>Notify me about new replies</strong></label></div>
-                                        </div>
-                                        <div class="mb-3"><button class="btn btn-primary btn-sm" type="submit">Save Settings</button></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row">
                     </div>
                 </div>
             </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
-                </div>
-            </footer>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/grayscale.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+        function getName(){
+            document.getElementById("spanName").innerHTML = prompt("Enter your name:");
+        }
+        function getSurname(){
+            document.getElementById("spanSurname").innerHTML = prompt("Enter your Surname:");
+        }
+        function getWeight(){
+            document.getElementById("spanWeight").innerHTML = prompt("Enter your Weight:");
+        }
+        function getHeight(){
+            document.getElementById("spanHeight").innerHTML = prompt("Enter your Height:");
+        }
+        function getIn(){
+            document.getElementById("spanIn").innerHTML = prompt("Enter your Recomended calorie consumption:");
+        }
+        function getOut(){
+            document.getElementById("spanOut").innerHTML = prompt("Enter your Recomended calorie output:");
+        }
+    </script>
 </body>
+
+<div>
+    
+</div>
 
 </html>

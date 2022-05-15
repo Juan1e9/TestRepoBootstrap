@@ -14,23 +14,25 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="page-top" style="background: var(--bs-white);">
+<style>
+    .table>tbody>tr.active>td {
+        background: #42DCA3;
+        color: #fff;
+    }
+</style>
+
+<body id="page-top" style="background: var(--bs-white);" autoscroll="untrue">
     <div id="wrapper">
         <div class="d-flex flex-column" id="content-wrapper" style="color: var(--bs-gray-900);background: var(--bs-white);">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand-md sticky-top" id="mainNav" style="color: var(--bs-gray-900);">
-                    <div class="container"><a class="navbar-brand" href="#" style="color: var(--bs-gray-900);">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+                    <div class="container"><a class="navbar-brand" href="#" style="color: var(--bs-gray-900);">Sports</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
                         <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--bs-gray-900);">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item nav-link"></li>
 
 
-                                <li class="nav-item dropdown" style="padding: 8px">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #1c1f23">Profile</a>
-                                    <div class="dropdown-menu" >
-                                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeUserInfo" style="color: #1c1f23">Change user info</a>
-                                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeUserPassword" style="color: #1c1f23">Change password</a>
-                                </li>
+                                <li class="nav-item nav-link"><a class="nav-link" href="profile.html" data-bs-target="#" style="color: var(--bs-gray-900);">Profile</a></li>
 
                                 <li class="nav-item nav-link"><a class="nav-link" href="index.html" data-bs-target="#" style="color: var(--bs-gray-900);">Logout</a></li>
 
@@ -40,106 +42,7 @@
 
                     </div>
                 </nav>
-                <!-- Modal in modal food -->
 
-
-                <!-- Modal -->
-
-                <!-- Modal Change password-->
-                <div class="modal fade" id="changeUserPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="">Password change</h5>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="oldPass"><strong>Old password:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="password" id="oldPass" name="oldPass">
-                                    </div>
-                                </div>
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="newPass1"><strong>New password:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="password" id="newPass1" name="newPass1">
-                                    </div>
-                                </div>
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="newPass2"><strong>Repeat new password:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="password" id="newPass2" name="newPass2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-
-                <!-- Modal Change info -->
-                <div class="modal fade" id="changeUserInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">User info change</h5>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="username"><strong>Username:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="text" id="username" name="username">
-                                    </div>
-                                </div>
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="country"><strong>Country:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <select class="form-select " aria-label="Default select example" id="country">
-                                            <option value="1">Latvia</option>
-                                            <option value="2">Estonia</option>
-                                            <option value="3">Lithuania</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="date"><strong>Birth date:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="date" id="date">
-                                    </div>
-                                </div>
-                                <div class="row d-flex align-items-center m-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label" for="email"><strong>Email:</strong></label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input class="form-control" type="text" id="email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
                     <div class="row">
@@ -148,218 +51,49 @@
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-gray-900);">EATEN FOOD's&nbsp; Today</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>2570Kcal</span></div>
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span style="color: var(--bs-gray-900);">EATEN FOODS <br> Today</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="ingestedCalories"></span>Kcal</div>
                                         </div>
                                         <div class="col-auto">
                                             <!-- Button trigger modal -->
-                                            <button class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"  style="background: var(--bs-white);border-color: var(--bs-gray-900);">
-                                                Add Activity
+                                            <button class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle2"  style="background: var(--bs-white);border-color: var(--bs-gray-900);">
+                                                Add Food
                                             </button>
                                             <!-- Modal -->
 
-                                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
-                                                <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel">
+                                                <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
+                                                            <h5 class="modal-title" id="">Add Food</h5>
                                                         </div>
                                                         <div class="modal-body">
-
-                                                            <!-- Inside -->
-                                                            <div class="container-fluid">
-                                                                <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-xl-12">
-                                                                        <div class="card shadow mb-4">
-                                                                            <div class="card-header d-flex align-items-center">
-
-                                                                                <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">Done activities today</h6>
-
-                                                                            </div>
-                                                                            <div class="card-body" style="height: 550px;">
-                                                                                <div class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info" style="height: 380px;">
-                                                                                    <table class="table my-0" id="dataTable">
-                                                                                        <thead>
-                                                                                        <tr>
-                                                                                            <th>Activity name</th>
-                                                                                            <th>Duration of activity (min)</th>
-                                                                                            <th>lost kcal</th>
-                                                                                        </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                        <tr>
-                                                                                            <td>Sprint</td>
-                                                                                            <td>30<br></td>
-                                                                                            <td>100</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Gym</td>
-                                                                                            <td>20<br></td>
-                                                                                            <td>500</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Beerpong</td>
-                                                                                            <td>3<br></td>
-                                                                                            <td>20</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Sprint</td>
-                                                                                            <td>30<br></td>
-                                                                                            <td>100</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Gym</td>
-                                                                                            <td>20<br></td>
-                                                                                            <td>500</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Yoga</td>
-                                                                                            <td>40<br></td>
-                                                                                            <td>50</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Sprint</td>
-                                                                                            <td>30<br></td>
-                                                                                            <td>100</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Gym</td>
-                                                                                            <td>20<br></td>
-                                                                                            <td>500</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Yoga</td>
-                                                                                            <td>40<br></td>
-                                                                                            <td>50</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Sprint</td>
-                                                                                            <td>30<br></td>
-                                                                                            <td>100</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Gym</td>
-                                                                                            <td>20<br></td>
-                                                                                            <td>500</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Yoga</td>
-                                                                                            <td>40<br></td>
-                                                                                            <td>50</td>
-                                                                                        </tr>
-                                                                                        </tbody>
-                                                                                        <tfoot>
-                                                                                        <tr style="background: var(--bs-gray-500);">
-                                                                                            <td><strong>In total:</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                        </tr>
-                                                                                        </tfoot>
-                                                                                    </table>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6 align-self-center">
-                                                                                    </div>
-                                                                                    <div class="col-md-6">
-                                                                                        <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
-                                                                                            <ul class="pagination" id="pages">
-                                                                                                <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#" onclick="refreshTable(getCurrPage() -1)"><span aria-hidden="true">«</span></a></li>
-                                                                                                <li class="page-item active"><a class="page-link" href="#" onclick="refreshTable(1)">1</a></li>
-                                                                                                <li class="page-item"><a class="page-link" aria-label="Next" href="#" onclick="refreshTable(getCurrPage() +1)"><span aria-hidden="true">»</span></a></li>
-                                                                                            </ul>
-                                                                                        </nav>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="d-flex justify-content-between align-items-center m-2">
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" data-bs-toggle="modal" href="#exampleModalToggle2"  style="background: var(--bs-white);border-color: var(--bs-gray-900);">Add activity</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Edit</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Delete</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="foodName"><strong>Food name:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-select " aria-label="Default select example" id="foodName">
+                                                                        <option value="1">Outmeal with milk</option>
+                                                                        <option value="2">Berries</option>
+                                                                        <option value="3">Milk</option>
+                                                                        <option value="4">Steak</option>
+                                                                        <option value="5">Fries</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-
-
-
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="foodWeight"><strong>Food weight (g):</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" id="foodWeightt" name="Food weight">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-<!--                                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">-->
-<!--                                                <div class="modal-dialog modal-dialog-centered">-->
-<!--                                                    <div class="modal-content">-->
-
-
-<!--                                                        <div class="modal-footer">-->
-<!--                                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>-->
-<!--                                                        </div>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-
-                                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="frame">
-                                                            <div class="cancel">
-
-                                                                <button onclick>
-                                                                    <div>X</div>
-                                                                </button>
-
-                                                            </div>
-                                                            <div class="nosauk">
-                                                                Add Food
-                                                            </div>
-                                                            <div class="center">
-                                                                <label>Food name: </label>
-                                                                <label class="center">
-                                                                    <div class="divScroll">
-                                                                        <p class="edieni">Outmeal with milk</p>
-                                                                        <p class="edieni">Berries</p>
-                                                                        <p class="edieni">Milk</p>
-                                                                        <p class="edieni">Name</p>
-                                                                        <p class="edieni">Name</p>
-                                                                    </div>
-                                                                </label>
-                                                            </div>
-
-
-                                                            <div class="atstarpePec">
-                                                            </div>
-                                                            <div class="yesButton">
-                                                                <label class="bezAtst">Food weight:</label>
-                                                                <textarea class="platums" rows="1" maxlength="5" placeholder="weight">150</textarea>
-                                                                g
-
-
-                                                            </div>
-                                                            <div class="atstarpePec">
-                                                            </div>
-
-                                                            <input class="btn btn-primary" type="button" value="Add">
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -378,241 +112,44 @@
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
                                             <div class="text-uppercase text-success fw-bold text-xs mb-1"><span style="color: var(--bs-gray-900);">CAlories used today</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>215,000</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="consumedCalories"></span>Kcal</div>
                                         </div>
                                         <div class="col-auto">
                                             <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1" style="background: var(--bs-white);border-color: var(--bs-gray-900);">
-                                                Add food
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle1" style="background: var(--bs-white);border-color: var(--bs-gray-900);">
+                                                Add activity
                                             </button>
+
                                             <!-- Modal -->
-                                            <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                                <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"">
+                                                <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
+                                                            <h5 class="modal-title" id="">Add activity</h5>
                                                         </div>
                                                         <div class="modal-body">
-
-                                                            <!-- Inside -->
-                                                            <div class="container-fluid">
-                                                                <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12 col-xl-12">
-                                                                        <div class="card shadow mb-4">
-                                                                            <div class="card-header d-flex align-items-center">
-
-                                                                                <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">Eaten foods today</h6>
-
-                                                                            </div>
-                                                                            <div class="card-body" style="height: 550px;">
-                                                                                <div class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info" style="height: 380px;">
-                                                                                    <table class="table my-0" id="dataTable1">
-                                                                                        <thead>
-                                                                                        <tr>
-                                                                                            <th>Food name</th>
-                                                                                            <th>Food weight (g)</th>
-                                                                                            <th>Kcal</th>
-                                                                                            <th>Protein (g)</th>
-                                                                                            <th>Carbohydrates (g)</th>
-                                                                                            <th>Fats (g)</th>
-                                                                                        </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                        <tr>
-                                                                                            <td>Stesaf</td>
-                                                                                            <td>200<br></td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak7</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple8</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak7</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple8</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Steak</td>
-                                                                                            <td>200</td>
-                                                                                            <td>196</td>
-                                                                                            <td>40</td>
-                                                                                            <td>8</td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Apple</td>
-                                                                                            <td>2000</td>
-                                                                                            <td>22</td>
-                                                                                            <td>17</td>
-                                                                                            <td>0<br></td>
-                                                                                            <td>1</td>
-                                                                                        </tr>
-                                                                                        </tbody>
-                                                                                        <tfoot>
-                                                                                        <tr style="background: var(--bs-gray-500);">
-                                                                                            <td><strong></strong></td>
-                                                                                            <td><strong>In total:</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                            <td><strong>x</strong></td>
-                                                                                        </tr>
-                                                                                        </tfoot>
-                                                                                    </table>
-                                                                                </div>
-                                                                                <div class="row">
-                                                                                    <div class="col-md-6 align-self-center">
-                                                                                    </div>
-                                                                                    <div class="col-md-6">
-                                                                                        <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
-                                                                                            <ul class="pagination" id="pages1">
-                                                                                                <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#" onclick="refreshTable(getCurrPage() -1)"><span aria-hidden="true">«</span></a></li>
-                                                                                                <li class="page-item active"><a class="page-link" href="#" onclick="refreshTable(1)">1</a></li>
-                                                                                                <li class="page-item"><a class="page-link" aria-label="Next" href="#" onclick="refreshTable(getCurrPage() +1)"><span aria-hidden="true">»</span></a></li>
-                                                                                            </ul>
-                                                                                        </nav>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="d-flex justify-content-between align-items-center m-2">
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Add food</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Edit</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <form>
-                                                                                            <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Delete</button>
-                                                                                        </form>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="activityName"><strong>Activity name:</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-select " aria-label="Default select example" id="activityName">
+                                                                        <option value="1">Running</option>
+                                                                        <option value="2">Olympic weightlifting</option>
+                                                                        <option value="3">Powerlifting</option>
+                                                                        <option value="4">Swiming</option>
+                                                                        <option value="5">Football</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-
-
-
+                                                            <div class="row d-flex align-items-center m-2">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="activityTime"><strong>Activity duration (min):</strong></label>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" id="activityTime" name="activityTime">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -622,14 +159,14 @@
                                                 </div>
                                             </div>
                                             <!-- Modal -->
-                                            <!-- END-->
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-xl-3 mb-4">
+                        <!-- <div class="col-md-6 col-xl-3 mb-4">
                             <div class="card shadow border-start-warning py-2">
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
@@ -642,8 +179,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
+                    </div> -->
+
+                    <!-- <div class="row">
                         <div class="col-lg-7 col-xl-8" style="width: auto;max-width: 100%;min-width: 100%;">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -660,12 +198,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
             <div class="row">
                 <div class="col-lg-12 col-xl-12">
@@ -692,8 +230,6 @@
                             <div class="chart-area" style="height: 380px;">
                                 <canvas id="lineChart"></canvas>
                             </div>
-                            <!--<div class="chart-area" style="height: 380px;"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
-                            -->
                             <div class="d-flex align-items-center m-2">
                                 <div class="mx-2">
                                     <p class="text-primary fw-bold m-auto" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">Show:</p>
@@ -710,11 +246,411 @@
                                         Wasted calories
                                     </label>
                                 </div>
-                                <div class="ms-auto">
-                                    <form action="main.html">
-                                        <button class="btn btn-primary btn-user" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Return</button>
-                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card shadow mb-4" id="cardFood">
+                        <div class="card-header d-flex align-items-center">
+                            <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">Foods eaten today</h6>
+                        </div>
+                        <div class="card-body" style="height: 550px;">
+                            <div class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info" style="height: 380px;">
+                                <table class="table table-hover my-0" id="dataTable1">
+                                    <thead>
+                                    <tr>
+                                        <th>Food name</th>
+                                        <th>Food weight (g)</th>
+                                        <th>Kcal</th>
+                                        <th>Protein (g)</th>
+                                        <th>Carbohydrates (g)</th>
+                                        <th>Fats (g)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200<br></td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple8</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak7</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple8</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td>200</td>
+                                        <td>196</td>
+                                        <td>40</td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td>2000</td>
+                                        <td>22</td>
+                                        <td>17</td>
+                                        <td>0<br></td>
+                                        <td>1</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr style="background: var(--bs-gray-500);">
+                                        <td><strong></strong></td>
+                                        <td><strong>In total:</strong></td>
+                                        <td><strong>x</strong></td>
+                                        <td><strong>x</strong></td>
+                                        <td><strong>x</strong></td>
+                                        <td><strong>x</strong></td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <div class="d-flex justify-content-between align-items-center m-2">
+                                        <div>
+                                                <button class="btn btn-primary btn-user" onclick = "loadEditFood()" data-bs-toggle="modal" data-bs-target="#editFoodModal" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Edit</button>
+                                                <div class="modal fade" id="editFoodModal" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Edit Food</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row d-flex align-items-center m-2">
+                                                                    <div class="text-dark fw-bold mb-0"><span id="selectedEditFood"></span></div>
+                                                                </div>
+                                                                <div class="row d-flex align-items-center m-2" id ="selectedEditFoodWeight">
+                                                                    <div class="col-md-4">
+                                                                        <label class="form-label" for="foodWeight"><strong>Food weight (g):</strong></label>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <input class="form-control" id="foodWeightt" name="Food weight">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <button class="btn btn-primary btn-user" onclick = "loadDeleteFood()" data-bs-toggle="modal" data-bs-target="#deleteFoodModal" type="submit" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Delete</button>
+                                                <div class="modal fade" id="deleteFoodModal" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="">Delete food</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="text-dark mb-0"><span id="selectedDeleteFood"></span></div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination" id="pages1">
+                                            <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#!" onclick="refreshTable1(getCurrPage1() -1)"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#!" onclick="refreshTable1(1)">1</a></li>
+                                            <li class="page-item"><a class="page-link" aria-label="Next" href="#!" onclick="refreshTable1(getCurrPage1() +1)"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card shadow mb-4" id="cardActivity">
+                        <div class="card-header d-flex align-items-center">
+                            <h6 class="text-primary fw-bold m-0" style="border-color: var(--bs-gray-900);color: var(--bs-gray-900);--bs-primary: #000000;--bs-primary-rgb: 0,0,0;">Activities done today</h6>
+                        </div>
+                        <div class="card-body" style="height: 550px;">
+                            <div class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info" style="height: 380px;">
+                                <table class="table table-hover my-0" id="dataTable">
+                                    <thead>
+                                    <tr>
+                                        <th>Activity name</th>
+                                        <th>Duration of activity (min)</th>
+                                        <th>lost kcal</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Sprint</td>
+                                        <td>30<br></td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym</td>
+                                        <td>20<br></td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beerpong</td>
+                                        <td>3<br></td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sprint</td>
+                                        <td>30<br></td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym</td>
+                                        <td>20<br></td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yoga</td>
+                                        <td>40<br></td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sprint</td>
+                                        <td>30<br></td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym</td>
+                                        <td>20<br></td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yoga</td>
+                                        <td>40<br></td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sprint</td>
+                                        <td>30<br></td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym</td>
+                                        <td>20<br></td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yoga</td>
+                                        <td>40<br></td>
+                                        <td>50</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr style="background: var(--bs-gray-500);">
+                                        <td><strong>In total:</strong></td>
+                                        <td><strong>x</strong></td>
+                                        <td><strong>x</strong></td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <div class="d-flex justify-content-between align-items-center m-2">
+                                        <div>
+                                                <button class="btn btn-primary btn-user" type="submit" onclick="loadEditActivity()" data-bs-toggle="modal" data-bs-target="#editActivityModal" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Edit</button>
+                                                <div class="modal fade" id="editActivityModal" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title">Edit Activity</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row d-flex align-items-center m-2">
+                                                                    <div class="text-dark fw-bold mb-0"><span id="selectedEditActivity"></span></div>
+                                                                </div>
+                                                                <div class="row d-flex align-items-center m-2" id ="selectedEditActivityLength">
+                                                                    <div class="col-md-4">
+                                                                        <label class="form-label" for="foodWeight"><strong>Activity duration (min):</strong></label>
+                                                                    </div>
+                                                                    <div class="col-md-8">
+                                                                        <input class="form-control" id="foodWeightt" name="Food weight">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        <div>
+                                                <button class="btn btn-primary btn-user" onclick="loadDeleteActivity()" type="submit" data-bs-toggle="modal" data-bs-target="#deleteActivityModal" style="background: var(--bs-white);border-color: var(--bs-gray-900);">Delete</button>
+                                                <div class="modal fade" id="deleteActivityModal" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="">Delete activity</h5>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="text-dark mb-0"><span id="selectedDeleteActivity"></span></div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination" id="pages">
+                                            <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#!" onclick="refreshTable(getCurrPage() -1)"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#!" onclick="refreshTable(1)">1</a></li>
+                                            <li class="page-item"><a class="page-link" aria-label="Next" href="#!" onclick="refreshTable(getCurrPage() +1)"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -747,8 +683,8 @@
                 var row = tbl.tBodies[0].rows[f];
                 for (let ff in row.cells) {
                     var cell = row.cells[ff];
-                    if (ff > 1){
-                        sums[ff -2] += Number(cell.innerText);
+                    if (ff > 0){
+                        sums[ff -1] += Number(cell.innerText);
                     }
                 }
             }
@@ -759,6 +695,7 @@
                     cell.innerText  = sums[f -1];
                 }
             }
+            document.getElementById("consumedCalories").innerHTML = sums[1];
         }
 
         function setupPages(){
@@ -775,7 +712,7 @@
                 li.classList.add("page-item");
                 var a = document.createElement("a");
                 a.classList.add("page-link");
-                a.href = "#";
+                a.href = "#!";
                 a.setAttribute("onclick","refreshTable(" + curPage + ")");
                 var node = document.createTextNode((curPage).toString());
                 a.appendChild(node);
@@ -786,9 +723,17 @@
             }
         }
 
-
+        function clearActive() {
+            var table = document.getElementById("dataTable");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                currentRow.classList.remove("active");
+            }
+        }
 
         function refreshTable(pg){
+            clearActive();
             var indexes = tblPages.getElementsByTagName("li");
 
             indexes[0].classList.remove("disabled");
@@ -828,9 +773,229 @@
             }
         }
 
+        function addRowHandlers() {
+            var table = document.getElementById("dataTable");
+            var rows = table.tBodies[0].getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                var createClickHandler = function(row) {
+                    return function() {
+                        clearActive();
+                        var cell = row.getElementsByTagName("td")[0];
+                        var id = cell.innerHTML;
+                        row.classList.add("active");
+                    };
+                };
+                currentRow.onclick = createClickHandler(currentRow);
+            }
+        }
+
+        var tbl1 = document.getElementById("dataTable1");
+        var tblPages1 = document.getElementById("pages1");
+
+        var dataRows1 = tbl1.rows;
+        var pages1 = Math.trunc((dataRows1.length -3)/ ELEMENTS_PER_PAGE) +1;
+
+        function getCurrPage1(){
+            var indexes = tblPages1.getElementsByTagName("li");
+
+            for(var f = 0; f < indexes.length; f ++){
+                if (indexes[f].classList.contains("active")){
+                    return f;
+                }
+            }
+        }
+
+        function calculate1(){
+        const sums = [0, 0, 0, 0];
+        for (let f in tbl1.tBodies[0].rows) {
+            var row = tbl1.tBodies[0].rows[f];
+            for (let ff in row.cells) {
+                var cell = row.cells[ff];
+                    if (ff > 1){
+                        sums[ff -2] += Number(cell.innerText);
+                    }
+            }  
+        }
+
+        for (let f in tbl1.tFoot.rows[0].cells) {
+            var cell = tbl1.tFoot.rows[0].cells[f];
+            if (f > 1){
+                cell.innerText  = sums[f -2];
+            }
+        }
+        document.getElementById("ingestedCalories").innerHTML = sums[0];
+    }
+
+        function setupPages1(){
+            while((dataRows1.length -2) % ELEMENTS_PER_PAGE != 0 || dataRows1.length -2 == 0){
+                //prompt("assa");
+                var row = tbl1.tBodies[0].insertRow();
+                row.insertCell().appendChild(document.createTextNode("\u00A0"));
+            }
+
+            var count = 1;
+            while (count < pages1){
+                var curPage = count +1;
+                var li = document.createElement("li");
+                li.classList.add("page-item");
+                var a = document.createElement("a");
+                a.classList.add("page-link");
+                a.href = "#!";
+                a.setAttribute("onclick","refreshTable1(" + curPage + ")");
+                var node = document.createTextNode((curPage).toString());
+                a.appendChild(node);
+                li.appendChild(a);
+                tblPages1.appendChild(li);
+                tblPages1.insertBefore(li, tblPages1.getElementsByTagName("li")[curPage]);
+                count ++;
+            }
+        }
+
+        function clearActive1() {
+            var table = document.getElementById("dataTable1");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                currentRow.classList.remove("active");
+            }
+        }
+
+        function refreshTable1(pg){
+            clearActive1();
+            var indexes = tblPages1.getElementsByTagName("li");
+
+            indexes[0].classList.remove("disabled");
+            indexes[indexes.length -1].classList.remove("disabled");
+            if (pg == 1){
+                indexes[0].classList.add("disabled");
+            }
+
+            if (pg == indexes.length -2){
+                indexes[indexes.length -1].classList.add("disabled");
+            }
+
+            for(var f = 0; f < indexes.length; f ++){
+                if (f == indexes.length -1){
+                    continue;
+                }
+
+                if (f == indexes.length -1){
+                    continue;
+                }
+
+                if (f == pg){
+                    indexes[f].classList.add("active");
+                } else{
+                    indexes[f].classList.remove("active");
+                }
+            }
+
+            var cur = getCurrPage1();
+            var rows = tbl1.tBodies[0].rows;
+            for(var f = 0; f < rows.length; f ++){
+                if (cur*ELEMENTS_PER_PAGE -ELEMENTS_PER_PAGE <= f && f < cur*ELEMENTS_PER_PAGE){
+                    rows[f].style.display='table-row';
+                } else{
+                    rows[f].style.display='none';
+                }
+            }
+        }
+
+        function addRowHandlers1() {
+            var table = document.getElementById("dataTable1");
+            var rows = table.tBodies[0].getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                var createClickHandler = function(row) {
+                    return function() {
+                        clearActive1();
+                        var cell = row.getElementsByTagName("td")[0];
+                        var id = cell.innerHTML;
+                        row.classList.add("active");
+                    };
+                };
+                currentRow.onclick = createClickHandler(currentRow);
+            }
+        }
+
         calculate();
         setupPages();
         refreshTable(1);
+        addRowHandlers();
+
+        calculate1();
+        setupPages1();
+        refreshTable1(1);
+        addRowHandlers1();
+        
+        document.getElementById("cardFood").addEventListener("click", function(event) {
+            if (event.target.tagName.toLowerCase() !== 'td' && event.target.tagName.toLowerCase() !== 'button'){
+                clearActive1();
+            }
+        });
+
+        document.getElementById("cardActivity").addEventListener("click", function(event) {
+            if (event.target.tagName.toLowerCase() !== 'td' && event.target.tagName.toLowerCase() !== 'button'){
+                clearActive();
+            }
+        });
+
+        function loadDeleteFood(){
+            var table = document.getElementById("dataTable1");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                if (currentRow.classList.contains("active")){
+                    document.getElementById("selectedDeleteFood").innerHTML = "Do You really want to delete food " + currentRow.cells[0].innerHTML + " (" + currentRow.cells[1].innerHTML + " g) from today's activities list?";
+                    return;
+                }
+            }
+            document.getElementById("selectedDeleteFood").innerHTML = "No food selected";
+        }
+
+        function loadEditFood(){
+            document.getElementById("selectedEditFoodWeight").classList.remove("invisible");
+            var table = document.getElementById("dataTable1");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                if (currentRow.classList.contains("active")){
+                    document.getElementById("selectedEditFood").innerHTML = currentRow.cells[0].innerHTML;
+                    return;
+                }
+            }
+            document.getElementById("selectedEditFood").innerHTML = "No food selected";
+            document.getElementById("selectedEditFoodWeight").classList.add("invisible");
+        }
+
+        function loadDeleteActivity(){
+            var table = document.getElementById("dataTable");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                if (currentRow.classList.contains("active")){
+                    document.getElementById("selectedDeleteActivity").innerHTML = "Do You really want to delete activity " + currentRow.cells[0].innerHTML + " (" + currentRow.cells[1].innerHTML + " min) from today's activities list?";
+                    return;
+                }
+            }
+            document.getElementById("selectedDeleteActivity").innerHTML = "No activity selected";
+        }
+
+        function loadEditActivity(){
+            document.getElementById("selectedEditActivityLength").classList.remove("invisible");
+            var table = document.getElementById("dataTable");
+            var rows = table.getElementsByTagName("tr");
+            for (i = 0; i < rows.length; i++) {
+                var currentRow = table.rows[i];
+                if (currentRow.classList.contains("active")){
+                    document.getElementById("selectedEditActivity").innerHTML = currentRow.cells[0].innerHTML;
+                    return;
+                }
+            }
+            document.getElementById("selectedEditActivity").innerHTML = "No activity selected";
+            document.getElementById("selectedEditActivityLength").classList.add("invisible");
+        }
     </script>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -877,6 +1042,6 @@
     });
     document.getElementById("lineChart");
     var canvas = document.getElementById('responsive-canvas');
-    canvas.height = 380;
+    //canvas.height = 380;
 </script>
 </html>
